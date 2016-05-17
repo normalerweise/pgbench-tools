@@ -1,0 +1,66 @@
+Test results:
+  script   | clients | tps  | avg_latency | max_latency 
+-----------+---------+------+-------------+-------------
+ tpc-b.sql |      64 | 1042 |          61 |       13911
+
+Server ip-172-31-18-249, client ip-172-31-18-249
+
+Server info and settings in postgresql.conf:
+PostgreSQL 9.5.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 4.8.2-19ubuntu1) 4.8.2, 64-bit
+      data_directory       
+---------------------------
+ /data/postgresql/9.5/main
+
+            name            |             current_setting              
+----------------------------+------------------------------------------
+ default_text_search_config | pg_catalog.english
+ dynamic_shared_memory_type | posix
+ external_pid_file          | /var/run/postgresql/9.5-main.pid
+ log_line_prefix            | %t [%p-%l] %q%u@%d 
+ log_timezone               | UTC
+ max_connections            | 100
+ port                       | 5432
+ shared_buffers             | 128MB
+ ssl                        | on
+ ssl_cert_file              | /etc/ssl/certs/ssl-cert-snakeoil.pem
+ ssl_key_file               | /etc/ssl/private/ssl-cert-snakeoil.key
+ stats_temp_directory       | /var/run/postgresql/9.5-main.pg_stat_tmp
+ TimeZone                   | UTC
+ unix_socket_directories    | /var/run/postgresql
+
+
+benchmark client OS Configuration (may not be the same as the server)
+Linux ip-172-31-18-249 3.13.0-74-generic #118-Ubuntu SMP Thu Dec 17 22:52:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+/etc/debian_version:
+jessie/sid
+
+/etc/lsb-release:
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.4 LTS"
+
+
+/proc/sys/vm/dirty_background_bytes=0
+/proc/sys/vm/dirty_background_ratio=10
+/proc/sys/vm/dirty_bytes=0
+/proc/sys/vm/dirty_expire_centisecs=3000
+/proc/sys/vm/dirty_ratio=20
+/proc/sys/vm/dirty_writeback_centisecs=500
+
+/dev/xvda1 on / type ext4 (rw,discard)
+proc on /proc type proc (rw,noexec,nosuid,nodev)
+sysfs on /sys type sysfs (rw,noexec,nosuid,nodev)
+none on /sys/fs/cgroup type tmpfs (rw)
+none on /sys/fs/fuse/connections type fusectl (rw)
+none on /sys/kernel/debug type debugfs (rw)
+none on /sys/kernel/security type securityfs (rw)
+udev on /dev type devtmpfs (rw,mode=0755)
+devpts on /dev/pts type devpts (rw,noexec,nosuid,gid=5,mode=0620)
+tmpfs on /run type tmpfs (rw,noexec,nosuid,size=10%,mode=0755)
+none on /run/lock type tmpfs (rw,noexec,nosuid,nodev,size=5242880)
+none on /run/shm type tmpfs (rw,nosuid,nodev)
+none on /run/user type tmpfs (rw,noexec,nosuid,nodev,size=104857600,mode=0755)
+none on /sys/fs/pstore type pstore (rw)
+/dev/xvdb on /data type ext4 (rw,_netdev)
+systemd on /sys/fs/cgroup/systemd type cgroup (rw,noexec,nosuid,nodev,none,name=systemd)

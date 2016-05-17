@@ -1,0 +1,1821 @@
+<html>
+    <head>
+        <title>pgbench-tools results</title>
+    </head>
+    <body>
+        <div id="tabs">
+<h3>Averages across all test sets:</h3>
+<img src="scaling.png"><p>
+<img src="clients.png"><p>
+<img src="3d.png"><p>
+<h3>Test sets comparison:</h3>
+<img src="scaling-sets.png"><p>
+<img src="clients-sets.png"><p>
+<ul>
+<li><a href='#set-1'>Test Set 1 - i7 SSD</a></li>
+</ul>
+<div id='set-1'>
+<hr><h3>Set 1 : i7 SSD</h3>
+<img src="scaling-1.png"><p>
+<img src="clients-1.png"><p>
+Averages for test set 1 by scale:
+<table border="1">
+  <tr>
+    <th align="center">set</th>
+    <th align="center">scale</th>
+    <th align="center">tps</th>
+    <th align="center">avg_latency</th>
+    <th align="center">90%&lt;</th>
+    <th align="center">max_latency</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">452</td>
+    <td align="right">40.081</td>
+    <td align="right">87.719</td>
+    <td align="right">659.662</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">1119</td>
+    <td align="right">11.845</td>
+    <td align="right">25.602</td>
+    <td align="right">224.757</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">1169</td>
+    <td align="right">10.977</td>
+    <td align="right">19.193</td>
+    <td align="right">268.51</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">640</td>
+    <td align="right">14.773</td>
+    <td align="right">22.846</td>
+    <td align="right">223.277</td>
+  </tr>
+</table>
+</p>
+Averages for test set 1 by clients:
+<table border="1">
+  <tr>
+    <th align="center">set</th>
+    <th align="center">clients</th>
+    <th align="center">tps</th>
+    <th align="center">avg_latency</th>
+    <th align="center">90%&lt;</th>
+    <th align="center">max_latency</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">351</td>
+    <td align="right">2.992</td>
+    <td align="right">4.938</td>
+    <td align="right">37.142</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">2</td>
+    <td align="right">365</td>
+    <td align="right">5.241</td>
+    <td align="right">8.69</td>
+    <td align="right">56.906</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">4</td>
+    <td align="right">574</td>
+    <td align="right">7.387</td>
+    <td align="right">12.63</td>
+    <td align="right">66.389</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">8</td>
+    <td align="right">811</td>
+    <td align="right">11.383</td>
+    <td align="right">21.191</td>
+    <td align="right">196.942</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">16</td>
+    <td align="right">1121</td>
+    <td align="right">18.706</td>
+    <td align="right">35.915</td>
+    <td align="right">308.157</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">32</td>
+    <td align="right">1412</td>
+    <td align="right">33.619</td>
+    <td align="right">69.662</td>
+    <td align="right">638.694</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">64</td>
+    <td align="right">1624</td>
+    <td align="right">64.286</td>
+    <td align="right">143.036</td>
+    <td align="right">1291.828</td>
+  </tr>
+</table>
+</p>
+Averages for test set 1 by scale, client, and rate limit:
+<table border="1">
+  <tr>
+    <th align="center">set</th>
+    <th align="center">scale</th>
+    <th align="center">clients</th>
+    <th align="center">rate_limit</th>
+    <th align="center">tps</th>
+    <th align="center">avg_latency</th>
+    <th align="center">90%&lt;</th>
+    <th align="center">max_latency</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">424</td>
+    <td align="right">2.359</td>
+    <td align="right">2.195</td>
+    <td align="right">17.412</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">465</td>
+    <td align="right">4.301</td>
+    <td align="right">4.105</td>
+    <td align="right">23.438</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">458</td>
+    <td align="right">8.73</td>
+    <td align="right">15.038</td>
+    <td align="right">57.131</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">459</td>
+    <td align="right">17.419</td>
+    <td align="right">35.692</td>
+    <td align="right">162.545</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">457</td>
+    <td align="right">35.022</td>
+    <td align="right">72.456</td>
+    <td align="right">486.161</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">456</td>
+    <td align="right">70.174</td>
+    <td align="right">152.54</td>
+    <td align="right">1216.614</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">448</td>
+    <td align="right">142.559</td>
+    <td align="right">332.004</td>
+    <td align="right">2654.336</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">390</td>
+    <td align="right">2.56</td>
+    <td align="right">2.331</td>
+    <td align="right">31.439</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">444</td>
+    <td align="right">4.502</td>
+    <td align="right">9.357</td>
+    <td align="right">35.662</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">759</td>
+    <td align="right">5.269</td>
+    <td align="right">9.802</td>
+    <td align="right">71.509</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1152</td>
+    <td align="right">6.94</td>
+    <td align="right">13.237</td>
+    <td align="right">141.292</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1512</td>
+    <td align="right">10.58</td>
+    <td align="right">21.002</td>
+    <td align="right">203.993</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1716</td>
+    <td align="right">18.635</td>
+    <td align="right">40.479</td>
+    <td align="right">404.457</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">10</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1857</td>
+    <td align="right">34.428</td>
+    <td align="right">83.003</td>
+    <td align="right">684.948</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">313</td>
+    <td align="right">3.229</td>
+    <td align="right">7.961</td>
+    <td align="right">68.413</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">358</td>
+    <td align="right">5.596</td>
+    <td align="right">10.164</td>
+    <td align="right">105.522</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">577</td>
+    <td align="right">6.952</td>
+    <td align="right">11.674</td>
+    <td align="right">71.665</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">902</td>
+    <td align="right">8.928</td>
+    <td align="right">15.733</td>
+    <td align="right">254.123</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1463</td>
+    <td align="right">10.939</td>
+    <td align="right">17.893</td>
+    <td align="right">282.883</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2071</td>
+    <td align="right">15.584</td>
+    <td align="right">26.546</td>
+    <td align="right">370.796</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">100</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2501</td>
+    <td align="right">25.607</td>
+    <td align="right">44.379</td>
+    <td align="right">726.164</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">238</td>
+    <td align="right">4.232</td>
+    <td align="right">8.428</td>
+    <td align="right">28.382</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">108</td>
+    <td align="right">9.214</td>
+    <td align="right">16.021</td>
+    <td align="right">75.192</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">363</td>
+    <td align="right">11.018</td>
+    <td align="right">16.759</td>
+    <td align="right">62.974</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">573</td>
+    <td align="right">13.968</td>
+    <td align="right">17.918</td>
+    <td align="right">295.538</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">917</td>
+    <td align="right">17.438</td>
+    <td align="right">25.092</td>
+    <td align="right">162.464</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1390</td>
+    <td align="right">23.005</td>
+    <td align="right">37.923</td>
+    <td align="right">411.343</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="right">1000</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1823</td>
+    <td align="right">35.075</td>
+    <td align="right">52.201</td>
+    <td align="right">721.944</td>
+  </tr>
+</table>
+</p>
+Detail for test set 1:
+<table border="1">
+  <tr>
+    <th align="center">set</th>
+    <th align="center">test</th>
+    <th align="center">scale</th>
+    <th align="center">clients</th>
+    <th align="center">rate_limit</th>
+    <th align="center">tps</th>
+    <th align="center">max_latency</th>
+    <th align="center">chkpts</th>
+    <th align="center">buf_check</th>
+    <th align="center">buf_clean</th>
+    <th align="center">buf_backend</th>
+    <th align="center">buf_alloc</th>
+    <th align="center">max_clean</th>
+    <th align="center">backend_sync</th>
+    <th align="center">max_dirty</th>
+    <th align="center">wal_written</th>
+    <th align="center">cleanup</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="1/index.html">1</a></td>
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">424</td>
+    <td align="right">16.975</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">493</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">5795840</td>
+    <td align="right">25988992</td>
+    <td align="left">00:00:00.2916</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="8/index.html">8</a></td>
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">423</td>
+    <td align="right">14.206</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">164</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2543616</td>
+    <td align="right">24134384</td>
+    <td align="left">00:00:00.288202</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="15/index.html">15</a></td>
+    <td align="right">1</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">424</td>
+    <td align="right">21.055</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">164</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">7368704</td>
+    <td align="right">24339944</td>
+    <td align="left">00:00:00.288605</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="2/index.html">2</a></td>
+    <td align="right">1</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">464</td>
+    <td align="right">27.291</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">185</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">6356992</td>
+    <td align="right">27574256</td>
+    <td align="left">00:00:00.287807</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="9/index.html">9</a></td>
+    <td align="right">1</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">465</td>
+    <td align="right">21.433</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">179</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1933312</td>
+    <td align="right">26731144</td>
+    <td align="left">00:00:00.287212</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="16/index.html">16</a></td>
+    <td align="right">1</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">465</td>
+    <td align="right">21.59</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">181</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1298432</td>
+    <td align="right">26760568</td>
+    <td align="left">00:00:00.288145</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="3/index.html">3</a></td>
+    <td align="right">1</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">455</td>
+    <td align="right">60.979</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">210</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">10424320</td>
+    <td align="right">28941000</td>
+    <td align="left">00:00:00.305724</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="10/index.html">10</a></td>
+    <td align="right">1</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">459</td>
+    <td align="right">61.07</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">188</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4083712</td>
+    <td align="right">27012712</td>
+    <td align="left">00:00:00.298341</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="17/index.html">17</a></td>
+    <td align="right">1</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">460</td>
+    <td align="right">49.345</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">182</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4104192</td>
+    <td align="right">27107680</td>
+    <td align="left">00:00:00.293774</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="4/index.html">4</a></td>
+    <td align="right">1</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">458</td>
+    <td align="right">174.464</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">219</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">9887744</td>
+    <td align="right">29233608</td>
+    <td align="left">00:00:00.298437</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="11/index.html">11</a></td>
+    <td align="right">1</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">460</td>
+    <td align="right">149.569</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">192</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1511424</td>
+    <td align="right">27433672</td>
+    <td align="left">00:00:00.291351</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="18/index.html">18</a></td>
+    <td align="right">1</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">459</td>
+    <td align="right">163.601</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">494</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2846720</td>
+    <td align="right">27565888</td>
+    <td align="left">00:00:00.291528</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="5/index.html">5</a></td>
+    <td align="right">1</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">458</td>
+    <td align="right">559.779</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">208</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2998272</td>
+    <td align="right">29673520</td>
+    <td align="left">00:00:00.305357</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="12/index.html">12</a></td>
+    <td align="right">1</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">455</td>
+    <td align="right">458.863</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">198</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">10084352</td>
+    <td align="right">27765296</td>
+    <td align="left">00:00:00.295541</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="19/index.html">19</a></td>
+    <td align="right">1</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">457</td>
+    <td align="right">439.841</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">197</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4493312</td>
+    <td align="right">28169800</td>
+    <td align="left">00:00:00.294267</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="6/index.html">6</a></td>
+    <td align="right">1</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">457</td>
+    <td align="right">1354.956</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">253</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2867200</td>
+    <td align="right">29961944</td>
+    <td align="left">00:00:00.303694</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="13/index.html">13</a></td>
+    <td align="right">1</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">452</td>
+    <td align="right">1284.741</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">218</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">18595840</td>
+    <td align="right">28688136</td>
+    <td align="left">00:00:00.300741</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="20/index.html">20</a></td>
+    <td align="right">1</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">459</td>
+    <td align="right">1010.144</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">210</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4620288</td>
+    <td align="right">29043936</td>
+    <td align="left">00:00:00.302394</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="7/index.html">7</a></td>
+    <td align="right">1</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">452</td>
+    <td align="right">2171.758</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">263</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2023424</td>
+    <td align="right">29882056</td>
+    <td align="left">00:00:00.303279</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="14/index.html">14</a></td>
+    <td align="right">1</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">445</td>
+    <td align="right">2455.901</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">263</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">11325440</td>
+    <td align="right">29461192</td>
+    <td align="left">00:00:00.303286</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="21/index.html">21</a></td>
+    <td align="right">1</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">448</td>
+    <td align="right">3335.348</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">257</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4976640</td>
+    <td align="right">29726800</td>
+    <td align="left">00:00:00.315794</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="22/index.html">22</a></td>
+    <td align="right">10</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">385</td>
+    <td align="right">59.634</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">18</td>
+    <td align="right">0</td>
+    <td align="right">13924</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4706304</td>
+    <td align="right">131090152</td>
+    <td align="left">00:00:00.731151</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="29/index.html">29</a></td>
+    <td align="right">10</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">393</td>
+    <td align="right">18.219</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1401</td>
+    <td align="right">0</td>
+    <td align="right">5898</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">12550144</td>
+    <td align="right">114580240</td>
+    <td align="left">00:00:00.923687</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="36/index.html">36</a></td>
+    <td align="right">10</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">394</td>
+    <td align="right">16.465</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1723</td>
+    <td align="right">0</td>
+    <td align="right">6378</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">10887168</td>
+    <td align="right">116957728</td>
+    <td align="left">00:00:00.886473</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="23/index.html">23</a></td>
+    <td align="right">10</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">434</td>
+    <td align="right">62.325</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4977</td>
+    <td align="right">0</td>
+    <td align="right">9841</td>
+    <td align="right">5</td>
+    <td align="right">0</td>
+    <td align="right">39043072</td>
+    <td align="right">156982128</td>
+    <td align="left">00:00:01.13984</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="30/index.html">30</a></td>
+    <td align="right">10</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">449</td>
+    <td align="right">22.899</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2207</td>
+    <td align="right">0</td>
+    <td align="right">6668</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">66519040</td>
+    <td align="right">122935304</td>
+    <td align="left">00:00:00.903095</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="37/index.html">37</a></td>
+    <td align="right">10</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">449</td>
+    <td align="right">21.763</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">2458</td>
+    <td align="right">0</td>
+    <td align="right">6892</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">16343040</td>
+    <td align="right">124284528</td>
+    <td align="left">00:00:00.938095</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="24/index.html">24</a></td>
+    <td align="right">10</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">752</td>
+    <td align="right">49.028</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">8200</td>
+    <td align="right">324</td>
+    <td align="right">14080</td>
+    <td align="right">11</td>
+    <td align="right">0</td>
+    <td align="right">71495680</td>
+    <td align="right">171047216</td>
+    <td align="left">00:00:01.175382</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="31/index.html">31</a></td>
+    <td align="right">10</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">762</td>
+    <td align="right">112.235</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">5326</td>
+    <td align="right">0</td>
+    <td align="right">11166</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">48848896</td>
+    <td align="right">151086952</td>
+    <td align="left">00:00:01.076069</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="38/index.html">38</a></td>
+    <td align="right">10</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">763</td>
+    <td align="right">53.265</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">5646</td>
+    <td align="right">0</td>
+    <td align="right">11516</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">39960576</td>
+    <td align="right">152442760</td>
+    <td align="left">00:00:00.94856</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="25/index.html">25</a></td>
+    <td align="right">10</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1143</td>
+    <td align="right">115.547</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">12730</td>
+    <td align="right">6018</td>
+    <td align="right">20569</td>
+    <td align="right">36</td>
+    <td align="right">0</td>
+    <td align="right">89366528</td>
+    <td align="right">184755048</td>
+    <td align="left">00:00:01.163271</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="32/index.html">32</a></td>
+    <td align="right">10</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1162</td>
+    <td align="right">201.174</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">11472</td>
+    <td align="right">356</td>
+    <td align="right">17090</td>
+    <td align="right">7</td>
+    <td align="right">0</td>
+    <td align="right">65486848</td>
+    <td align="right">175260736</td>
+    <td align="left">00:00:01.027432</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="39/index.html">39</a></td>
+    <td align="right">10</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1151</td>
+    <td align="right">107.154</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">13343</td>
+    <td align="right">5334</td>
+    <td align="right">21264</td>
+    <td align="right">51</td>
+    <td align="right">0</td>
+    <td align="right">84221952</td>
+    <td align="right">185464064</td>
+    <td align="left">00:00:01.249215</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="26/index.html">26</a></td>
+    <td align="right">10</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1527</td>
+    <td align="right">160.722</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">15229</td>
+    <td align="right">391</td>
+    <td align="right">20789</td>
+    <td align="right">28</td>
+    <td align="right">0</td>
+    <td align="right">70111232</td>
+    <td align="right">179841208</td>
+    <td align="left">00:00:00.969976</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="33/index.html">33</a></td>
+    <td align="right">10</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1502</td>
+    <td align="right">266.736</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">17438</td>
+    <td align="right">547</td>
+    <td align="right">22936</td>
+    <td align="right">45</td>
+    <td align="right">0</td>
+    <td align="right">79208448</td>
+    <td align="right">177687328</td>
+    <td align="left">00:00:01.525117</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="40/index.html">40</a></td>
+    <td align="right">10</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1506</td>
+    <td align="right">184.52</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">16745</td>
+    <td align="right">573</td>
+    <td align="right">22692</td>
+    <td align="right">46</td>
+    <td align="right">0</td>
+    <td align="right">74342400</td>
+    <td align="right">188533576</td>
+    <td align="left">00:00:01.154316</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="27/index.html">27</a></td>
+    <td align="right">10</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1714</td>
+    <td align="right">402.966</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">19875</td>
+    <td align="right">6509</td>
+    <td align="right">29309</td>
+    <td align="right">140</td>
+    <td align="right">0</td>
+    <td align="right">112050176</td>
+    <td align="right">204130720</td>
+    <td align="left">00:00:01.322533</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="34/index.html">34</a></td>
+    <td align="right">10</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1717</td>
+    <td align="right">351.174</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">21155</td>
+    <td align="right">1040</td>
+    <td align="right">28137</td>
+    <td align="right">166</td>
+    <td align="right">0</td>
+    <td align="right">90001408</td>
+    <td align="right">204963280</td>
+    <td align="left">00:00:02.289921</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="41/index.html">41</a></td>
+    <td align="right">10</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1717</td>
+    <td align="right">459.231</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">21349</td>
+    <td align="right">5773</td>
+    <td align="right">30952</td>
+    <td align="right">179</td>
+    <td align="right">0</td>
+    <td align="right">121319424</td>
+    <td align="right">205585584</td>
+    <td align="left">00:00:01.727104</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="28/index.html">28</a></td>
+    <td align="right">10</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1867</td>
+    <td align="right">805.487</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">21244</td>
+    <td align="right">648</td>
+    <td align="right">26751</td>
+    <td align="right">169</td>
+    <td align="right">0</td>
+    <td align="right">93065216</td>
+    <td align="right">202878872</td>
+    <td align="left">00:00:01.131877</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="35/index.html">35</a></td>
+    <td align="right">10</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1853</td>
+    <td align="right">579.803</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">22692</td>
+    <td align="right">4146</td>
+    <td align="right">31948</td>
+    <td align="right">198</td>
+    <td align="right">0</td>
+    <td align="right">98967552</td>
+    <td align="right">211013616</td>
+    <td align="left">00:00:02.333852</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="42/index.html">42</a></td>
+    <td align="right">10</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1852</td>
+    <td align="right">669.553</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">22193</td>
+    <td align="right">773</td>
+    <td align="right">28332</td>
+    <td align="right">194</td>
+    <td align="right">0</td>
+    <td align="right">105603072</td>
+    <td align="right">205027264</td>
+    <td align="left">00:00:01.168617</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="43/index.html">43</a></td>
+    <td align="right">100</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">333</td>
+    <td align="right">58.987</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">17067</td>
+    <td align="right">1803</td>
+    <td align="right">35048</td>
+    <td align="right">169</td>
+    <td align="right">0</td>
+    <td align="right">128188416</td>
+    <td align="right">268729640</td>
+    <td align="left">00:00:11.034114</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="50/index.html">50</a></td>
+    <td align="right">100</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">270</td>
+    <td align="right">113.016</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">15102</td>
+    <td align="right">80</td>
+    <td align="right">34137</td>
+    <td align="right">71</td>
+    <td align="right">0</td>
+    <td align="right">91607040</td>
+    <td align="right">222830728</td>
+    <td align="left">00:00:10.400426</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="57/index.html">57</a></td>
+    <td align="right">100</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">335</td>
+    <td align="right">33.237</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">19574</td>
+    <td align="right">1388</td>
+    <td align="right">42473</td>
+    <td align="right">179</td>
+    <td align="right">0</td>
+    <td align="right">106467328</td>
+    <td align="right">270547216</td>
+    <td align="left">00:00:10.290715</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="44/index.html">44</a></td>
+    <td align="right">100</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">339</td>
+    <td align="right">68.665</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">21970</td>
+    <td align="right">13510</td>
+    <td align="right">52792</td>
+    <td align="right">219</td>
+    <td align="right">0</td>
+    <td align="right">185208832</td>
+    <td align="right">401043024</td>
+    <td align="left">00:00:12.344769</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="51/index.html">51</a></td>
+    <td align="right">100</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">360</td>
+    <td align="right">213.994</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">20694</td>
+    <td align="right">2529</td>
+    <td align="right">45364</td>
+    <td align="right">206</td>
+    <td align="right">0</td>
+    <td align="right">129908736</td>
+    <td align="right">289925176</td>
+    <td align="left">00:00:11.520208</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="58/index.html">58</a></td>
+    <td align="right">100</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">375</td>
+    <td align="right">33.908</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">20891</td>
+    <td align="right">4594</td>
+    <td align="right">47374</td>
+    <td align="right">206</td>
+    <td align="right">0</td>
+    <td align="right">132964352</td>
+    <td align="right">301364856</td>
+    <td align="left">00:00:10.806122</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="45/index.html">45</a></td>
+    <td align="right">100</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">554</td>
+    <td align="right">70.958</td>
+    <td align="right">1</td>
+    <td align="right">7728</td>
+    <td align="right">22131</td>
+    <td align="right">28684</td>
+    <td align="right">75673</td>
+    <td align="right">208</td>
+    <td align="right">0</td>
+    <td align="right">332607488</td>
+    <td align="right">576325512</td>
+    <td align="left">00:00:23.275523</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="52/index.html">52</a></td>
+    <td align="right">100</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">553</td>
+    <td align="right">101.945</td>
+    <td align="right">1</td>
+    <td align="right">1676</td>
+    <td align="right">23493</td>
+    <td align="right">20245</td>
+    <td align="right">70650</td>
+    <td align="right">231</td>
+    <td align="right">0</td>
+    <td align="right">207847424</td>
+    <td align="right">432613080</td>
+    <td align="left">00:00:29.246329</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="59/index.html">59</a></td>
+    <td align="right">100</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">623</td>
+    <td align="right">42.093</td>
+    <td align="right">1</td>
+    <td align="right">4706</td>
+    <td align="right">23533</td>
+    <td align="right">24598</td>
+    <td align="right">79879</td>
+    <td align="right">233</td>
+    <td align="right">0</td>
+    <td align="right">243314688</td>
+    <td align="right">473584888</td>
+    <td align="left">00:00:24.639485</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="46/index.html">46</a></td>
+    <td align="right">100</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">919</td>
+    <td align="right">129.562</td>
+    <td align="right">2</td>
+    <td align="right">11837</td>
+    <td align="right">26552</td>
+    <td align="right">67674</td>
+    <td align="right">123401</td>
+    <td align="right">265</td>
+    <td align="right">0</td>
+    <td align="right">275656704</td>
+    <td align="right">886974352</td>
+    <td align="left">00:00:37.044499</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="53/index.html">53</a></td>
+    <td align="right">100</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">801</td>
+    <td align="right">568.474</td>
+    <td align="right">1</td>
+    <td align="right">5498</td>
+    <td align="right">26125</td>
+    <td align="right">33851</td>
+    <td align="right">103464</td>
+    <td align="right">260</td>
+    <td align="right">0</td>
+    <td align="right">296910848</td>
+    <td align="right">631199464</td>
+    <td align="left">00:00:39.089317</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="60/index.html">60</a></td>
+    <td align="right">100</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">986</td>
+    <td align="right">64.332</td>
+    <td align="right">1</td>
+    <td align="right">5492</td>
+    <td align="right">26223</td>
+    <td align="right">55718</td>
+    <td align="right">128506</td>
+    <td align="right">260</td>
+    <td align="right">0</td>
+    <td align="right">255156224</td>
+    <td align="right">768759112</td>
+    <td align="left">00:00:32.578109</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="47/index.html">47</a></td>
+    <td align="right">100</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1483</td>
+    <td align="right">92.711</td>
+    <td align="right">3</td>
+    <td align="right">20587</td>
+    <td align="right">27822</td>
+    <td align="right">118114</td>
+    <td align="right">198087</td>
+    <td align="right">278</td>
+    <td align="right">0</td>
+    <td align="right">393318400</td>
+    <td align="right">1348711840</td>
+    <td align="left">00:00:44.079381</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="54/index.html">54</a></td>
+    <td align="right">100</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1486</td>
+    <td align="right">164.164</td>
+    <td align="right">2</td>
+    <td align="right">10910</td>
+    <td align="right">27536</td>
+    <td align="right">97262</td>
+    <td align="right">197090</td>
+    <td align="right">275</td>
+    <td align="right">0</td>
+    <td align="right">221958144</td>
+    <td align="right">1131491704</td>
+    <td align="left">00:00:47.333428</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="61/index.html">61</a></td>
+    <td align="right">100</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1419</td>
+    <td align="right">591.775</td>
+    <td align="right">2</td>
+    <td align="right">10819</td>
+    <td align="right">27423</td>
+    <td align="right">90799</td>
+    <td align="right">188355</td>
+    <td align="right">274</td>
+    <td align="right">0</td>
+    <td align="right">380293120</td>
+    <td align="right">1103780384</td>
+    <td align="left">00:00:46.142483</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="48/index.html">48</a></td>
+    <td align="right">100</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2233</td>
+    <td align="right">389.397</td>
+    <td align="right">4</td>
+    <td align="right">25221</td>
+    <td align="right">28645</td>
+    <td align="right">177167</td>
+    <td align="right">297013</td>
+    <td align="right">286</td>
+    <td align="right">0</td>
+    <td align="right">392486912</td>
+    <td align="right">1871476776</td>
+    <td align="left">00:00:50.6328</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="55/index.html">55</a></td>
+    <td align="right">100</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1806</td>
+    <td align="right">259.417</td>
+    <td align="right">3</td>
+    <td align="right">15843</td>
+    <td align="right">28391</td>
+    <td align="right">123285</td>
+    <td align="right">244044</td>
+    <td align="right">282</td>
+    <td align="right">0</td>
+    <td align="right">379600896</td>
+    <td align="right">1402273608</td>
+    <td align="left">00:00:55.847442</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="62/index.html">62</a></td>
+    <td align="right">100</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2173</td>
+    <td align="right">463.574</td>
+    <td align="right">4</td>
+    <td align="right">16703</td>
+    <td align="right">28611</td>
+    <td align="right">165078</td>
+    <td align="right">298855</td>
+    <td align="right">286</td>
+    <td align="right">0</td>
+    <td align="right">349892608</td>
+    <td align="right">1660528568</td>
+    <td align="left">00:00:54.8978</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="49/index.html">49</a></td>
+    <td align="right">100</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2609</td>
+    <td align="right">933.475</td>
+    <td align="right">4</td>
+    <td align="right">22338</td>
+    <td align="right">28507</td>
+    <td align="right">210859</td>
+    <td align="right">359106</td>
+    <td align="right">285</td>
+    <td align="right">0</td>
+    <td align="right">427966464</td>
+    <td align="right">2063305152</td>
+    <td align="left">00:01:06.883989</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="56/index.html">56</a></td>
+    <td align="right">100</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2501</td>
+    <td align="right">766.664</td>
+    <td align="right">4</td>
+    <td align="right">20880</td>
+    <td align="right">28636</td>
+    <td align="right">192244</td>
+    <td align="right">351728</td>
+    <td align="right">286</td>
+    <td align="right">0</td>
+    <td align="right">318365696</td>
+    <td align="right">1956935064</td>
+    <td align="left">00:01:03.55783</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="63/index.html">63</a></td>
+    <td align="right">100</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">2391</td>
+    <td align="right">478.352</td>
+    <td align="right">4</td>
+    <td align="right">20924</td>
+    <td align="right">29015</td>
+    <td align="right">179200</td>
+    <td align="right">334049</td>
+    <td align="right">290</td>
+    <td align="right">0</td>
+    <td align="right">393609216</td>
+    <td align="right">1858953056</td>
+    <td align="left">00:01:03.403337</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="64/index.html">64</a></td>
+    <td align="right">1000</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">259</td>
+    <td align="right">22.742</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">15620</td>
+    <td align="right">904</td>
+    <td align="right">32096</td>
+    <td align="right">139</td>
+    <td align="right">0</td>
+    <td align="right">116371456</td>
+    <td align="right">247333760</td>
+    <td align="left">00:00:20.397926</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="71/index.html">71</a></td>
+    <td align="right">1000</td>
+    <td align="right">1</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">217</td>
+    <td align="right">34.021</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">18606</td>
+    <td align="right">3068</td>
+    <td align="right">38131</td>
+    <td align="right">179</td>
+    <td align="right">0</td>
+    <td align="right">141672448</td>
+    <td align="right">298522736</td>
+    <td align="left">00:00:22.300945</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="65/index.html">65</a></td>
+    <td align="right">1000</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">217</td>
+    <td align="right">75.192</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">18573</td>
+    <td align="right">3873</td>
+    <td align="right">38165</td>
+    <td align="right">183</td>
+    <td align="right">0</td>
+    <td align="right">173719552</td>
+    <td align="right">309824608</td>
+    <td align="left">00:00:25.102042</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="72/index.html">72</a></td>
+    <td align="right">1000</td>
+    <td align="right">2</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">566</td>
+    <td align="right">1787875</td>
+    <td align="right">1886919</td>
+    <td align="right">25364376</td>
+    <td align="right">256063520</td>
+    <td align="right">16403</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="left">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="66/index.html">66</a></td>
+    <td align="right">1000</td>
+    <td align="right">4</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">363</td>
+    <td align="right">62.974</td>
+    <td align="right">1</td>
+    <td align="right">3564</td>
+    <td align="right">22621</td>
+    <td align="right">20507</td>
+    <td align="right">58567</td>
+    <td align="right">220</td>
+    <td align="right">0</td>
+    <td align="right">267202560</td>
+    <td align="right">467733064</td>
+    <td align="left">00:01:01.4086</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="67/index.html">67</a></td>
+    <td align="right">1000</td>
+    <td align="right">8</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">573</td>
+    <td align="right">295.538</td>
+    <td align="right">1</td>
+    <td align="right">7154</td>
+    <td align="right">23976</td>
+    <td align="right">41230</td>
+    <td align="right">90318</td>
+    <td align="right">233</td>
+    <td align="right">0</td>
+    <td align="right">363782144</td>
+    <td align="right">711837680</td>
+    <td align="left">00:01:40.857092</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="68/index.html">68</a></td>
+    <td align="right">1000</td>
+    <td align="right">16</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">917</td>
+    <td align="right">162.464</td>
+    <td align="right">2</td>
+    <td align="right">14527</td>
+    <td align="right">26888</td>
+    <td align="right">84171</td>
+    <td align="right">144051</td>
+    <td align="right">264</td>
+    <td align="right">0</td>
+    <td align="right">336375808</td>
+    <td align="right">1131099992</td>
+    <td align="left">00:02:38.015303</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="69/index.html">69</a></td>
+    <td align="right">1000</td>
+    <td align="right">32</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1390</td>
+    <td align="right">411.343</td>
+    <td align="right">4</td>
+    <td align="right">24824</td>
+    <td align="right">28581</td>
+    <td align="right">153213</td>
+    <td align="right">220911</td>
+    <td align="right">285</td>
+    <td align="right">0</td>
+    <td align="right">297902080</td>
+    <td align="right">1706833872</td>
+    <td align="left">00:03:47.790315</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1</td>
+    <td align="left"><a href="70/index.html">70</a></td>
+    <td align="right">1000</td>
+    <td align="right">64</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">1823</td>
+    <td align="right">721.944</td>
+    <td align="right">5</td>
+    <td align="right">34430</td>
+    <td align="right">28803</td>
+    <td align="right">213823</td>
+    <td align="right">299906</td>
+    <td align="right">288</td>
+    <td align="right">0</td>
+    <td align="right">375259136</td>
+    <td align="right">2326448368</td>
+    <td align="left">00:04:41.514786</td>
+  </tr>
+</table>
+</p>
+</div>
+        </div>
+    </body>
+</html>
