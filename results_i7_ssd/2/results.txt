@@ -1,0 +1,10 @@
+transaction type: Custom query
+scaling factor: 1
+query mode: simple
+number of clients: 2
+number of threads: 2
+duration: 60 s
+number of transactions actually processed: 27843
+latency average: 4.310 ms
+tps = 463.999463 (including connections establishing)
+tps = 464.007423 (excluding connections establishing)
