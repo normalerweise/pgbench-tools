@@ -1,0 +1,66 @@
+Test results:
+  script   | clients | tps | avg_latency | max_latency 
+-----------+---------+-----+-------------+-------------
+ tpc-b.sql |       8 | 459 |          17 |         164
+
+Server 20f4ec045136, client 20f4ec045136
+
+Server info and settings in postgresql.conf:
+PostgreSQL 9.5.2 on x86_64-pc-linux-gnu, compiled by gcc (Debian 4.9.2-10) 4.9.2, 64-bit
+      data_directory      
+--------------------------
+ /var/lib/postgresql/data
+
+            name            |  current_setting   
+----------------------------+--------------------
+ default_text_search_config | pg_catalog.english
+ dynamic_shared_memory_type | posix
+ log_timezone               | UTC
+ max_connections            | 100
+ shared_buffers             | 128MB
+ TimeZone                   | UTC
+
+
+benchmark client OS Configuration (may not be the same as the server)
+Linux 20f4ec045136 4.5.4-1-ARCH #1 SMP PREEMPT Wed May 11 22:21:28 CEST 2016 x86_64 GNU/Linux
+/etc/debian_version:
+8.4
+
+
+/proc/sys/vm/dirty_background_bytes=0
+/proc/sys/vm/dirty_background_ratio=10
+/proc/sys/vm/dirty_bytes=0
+/proc/sys/vm/dirty_expire_centisecs=3000
+/proc/sys/vm/dirty_ratio=20
+/proc/sys/vm/dirty_writeback_centisecs=500
+
+/dev/mapper/docker-8:7-5374264-dcdb7cb87aa421e612755d202f8777c963cdc4d52feed453af65bf19f5c93ec1 on / type ext4 (rw,relatime,stripe=16,data=ordered)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev type tmpfs (rw,nosuid,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=666)
+sysfs on /sys type sysfs (ro,nosuid,nodev,noexec,relatime)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,relatime,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (ro,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+cgroup on /sys/fs/cgroup/blkio type cgroup (ro,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (ro,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/freezer type cgroup (ro,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/net_cls type cgroup (ro,nosuid,nodev,noexec,relatime,net_cls)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (ro,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/devices type cgroup (ro,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/pids type cgroup (ro,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/memory type cgroup (ro,nosuid,nodev,noexec,relatime,memory)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+/dev/sda7 on /var/lib/postgresql/data type ext4 (rw,noatime,discard,data=ordered)
+/dev/sda7 on /etc/resolv.conf type ext4 (rw,noatime,discard,data=ordered)
+/dev/sda7 on /etc/hostname type ext4 (rw,noatime,discard,data=ordered)
+/dev/sda7 on /etc/hosts type ext4 (rw,noatime,discard,data=ordered)
+shm on /dev/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=65536k)
+proc on /proc/asound type proc (ro,nosuid,nodev,noexec,relatime)
+proc on /proc/bus type proc (ro,nosuid,nodev,noexec,relatime)
+proc on /proc/fs type proc (ro,nosuid,nodev,noexec,relatime)
+proc on /proc/irq type proc (ro,nosuid,nodev,noexec,relatime)
+proc on /proc/sys type proc (ro,nosuid,nodev,noexec,relatime)
+proc on /proc/sysrq-trigger type proc (ro,nosuid,nodev,noexec,relatime)
+tmpfs on /proc/kcore type tmpfs (rw,nosuid,mode=755)
+tmpfs on /proc/timer_stats type tmpfs (rw,nosuid,mode=755)
+tmpfs on /proc/sched_debug type tmpfs (rw,nosuid,mode=755)
