@@ -1,0 +1,58 @@
+Test results:
+  script   | clients | tps  | avg_latency | max_latency 
+-----------+---------+------+-------------+-------------
+ tpc-b.sql |      32 | 1725 |          19 |         505
+(1 Zeile)
+
+Server dsivcloud-0, client dsivcloud-0
+
+Server info and settings in postgresql.conf:
+PostgreSQL 9.5.3 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-16), 64-bit
+     data_directory      
+-------------------------
+ /var/lib/pgsql/9.5/data
+(1 Zeile)
+
+            name            |  current_setting   
+----------------------------+--------------------
+ default_text_search_config | pg_catalog.english
+ dynamic_shared_memory_type | posix
+ log_destination            | stderr
+ log_filename               | postgresql-%a.log
+ log_line_prefix            | < %m >
+ log_timezone               | Europe/Berlin
+ logging_collector          | on
+ max_connections            | 100
+ shared_buffers             | 128MB
+ TimeZone                   | Europe/Berlin
+(10 Zeilen)
+
+
+benchmark client OS Configuration (may not be the same as the server)
+Linux dsivcloud-0 2.6.32-642.el6.x86_64 #1 SMP Wed Apr 13 00:51:26 EDT 2016 x86_64 x86_64 x86_64 GNU/Linux
+/etc/lsb-release:
+LSB_VERSION=base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch
+
+/etc/redhat-release:
+Red Hat Enterprise Linux Server release 6.8 (Santiago)
+
+
+/proc/sys/vm/dirty_background_bytes=0
+/proc/sys/vm/dirty_background_ratio=10
+/proc/sys/vm/dirty_bytes=0
+/proc/sys/vm/dirty_expire_centisecs=3000
+/proc/sys/vm/dirty_ratio=20
+/proc/sys/vm/dirty_writeback_centisecs=500
+
+/dev/mapper/vg00-lv_root on / type ext4 (rw)
+proc on /proc type proc (rw)
+sysfs on /sys type sysfs (rw)
+devpts on /dev/pts type devpts (rw,gid=5,mode=600)
+tmpfs on /dev/shm type tmpfs (rw,rootcontext="system_u:object_r:tmpfs_t:s0")
+/dev/sda1 on /boot type ext4 (rw)
+/dev/mapper/vg00-lv_home on /home type ext4 (rw)
+/dev/mapper/vg00-lv_opt on /opt type ext4 (rw)
+/dev/mapper/vg00-lv_tmp on /tmp type ext4 (rw)
+/dev/mapper/vg00-lv_usr on /usr type ext4 (rw)
+/dev/mapper/vg00-lv_var on /var type ext4 (rw)
+none on /proc/sys/fs/binfmt_misc type binfmt_misc (rw)
