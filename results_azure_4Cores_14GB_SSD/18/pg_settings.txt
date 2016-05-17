@@ -1,0 +1,93 @@
+Test results:
+  script   | clients | tps | avg_latency | max_latency 
+-----------+---------+-----+-------------+-------------
+ tpc-b.sql |       1 | 224 |           4 |         214
+
+Server ubuntu, client ubuntu
+
+Server info and settings in postgresql.conf:
+PostgreSQL 9.5.2 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 5.3.1-13ubuntu3) 5.3.1 20160330, 64-bit
+        data_directory        
+------------------------------
+ /var/lib/postgresql/9.5/main
+
+            name            |             current_setting              
+----------------------------+------------------------------------------
+ default_text_search_config | pg_catalog.english
+ dynamic_shared_memory_type | posix
+ external_pid_file          | /var/run/postgresql/9.5-main.pid
+ log_line_prefix            | %t [%p-%l] %q%u@%d 
+ log_timezone               | UTC
+ max_connections            | 100
+ port                       | 5432
+ shared_buffers             | 128MB
+ ssl                        | on
+ ssl_cert_file              | /etc/ssl/certs/ssl-cert-snakeoil.pem
+ ssl_key_file               | /etc/ssl/private/ssl-cert-snakeoil.key
+ stats_temp_directory       | /var/run/postgresql/9.5-main.pg_stat_tmp
+ TimeZone                   | UTC
+ unix_socket_directories    | /var/run/postgresql
+
+
+benchmark client OS Configuration (may not be the same as the server)
+Linux ubuntu 4.4.0-22-generic #40-Ubuntu SMP Thu May 12 22:03:46 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+/etc/debian_version:
+stretch/sid
+
+/etc/lsb-release:
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=16.04
+DISTRIB_CODENAME=xenial
+DISTRIB_DESCRIPTION="Ubuntu 16.04 LTS"
+
+
+/proc/sys/vm/dirty_background_bytes=0
+/proc/sys/vm/dirty_background_ratio=10
+/proc/sys/vm/dirty_bytes=0
+/proc/sys/vm/dirty_expire_centisecs=3000
+/proc/sys/vm/dirty_ratio=20
+/proc/sys/vm/dirty_writeback_centisecs=500
+
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=7160892k,nr_inodes=1790223,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=1435992k,mode=755)
+/dev/sda1 on / type ext4 (rw,relatime,discard,data=ordered)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd,nsroot=/)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer,nsroot=/)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct,nsroot=/)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio,nsroot=/)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices,nsroot=/)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset,nsroot=/)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids,nsroot=/)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio,nsroot=/)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory,nsroot=/)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb,nsroot=/)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event,nsroot=/)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=36,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+none on /etc/network/interfaces.dynamic.d type tmpfs (rw,nosuid,nodev,noexec,relatime,size=64k)
+tmpfs on /run/lxcfs/controllers type tmpfs (rw,relatime,size=100k,mode=700)
+perf_event on /run/lxcfs/controllers/perf_event type cgroup (rw,relatime,perf_event,nsroot=/)
+hugetlb on /run/lxcfs/controllers/hugetlb type cgroup (rw,relatime,hugetlb,nsroot=/)
+memory on /run/lxcfs/controllers/memory type cgroup (rw,relatime,memory,nsroot=/)
+net_cls,net_prio on /run/lxcfs/controllers/net_cls,net_prio type cgroup (rw,relatime,net_cls,net_prio,nsroot=/)
+pids on /run/lxcfs/controllers/pids type cgroup (rw,relatime,pids,nsroot=/)
+cpuset on /run/lxcfs/controllers/cpuset type cgroup (rw,relatime,cpuset,nsroot=/)
+devices on /run/lxcfs/controllers/devices type cgroup (rw,relatime,devices,nsroot=/)
+blkio on /run/lxcfs/controllers/blkio type cgroup (rw,relatime,blkio,nsroot=/)
+cpu,cpuacct on /run/lxcfs/controllers/cpu,cpuacct type cgroup (rw,relatime,cpu,cpuacct,nsroot=/)
+freezer on /run/lxcfs/controllers/freezer type cgroup (rw,relatime,freezer,nsroot=/)
+name=systemd on /run/lxcfs/controllers/name=systemd type cgroup (rw,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd,nsroot=/)
+lxcfs on /var/lib/lxcfs type fuse.lxcfs (rw,nosuid,nodev,relatime,user_id=0,group_id=0,allow_other)
+/dev/sdb1 on /mnt type ext4 (rw,relatime,data=ordered)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=1435992k,mode=700,uid=1000,gid=1000)
